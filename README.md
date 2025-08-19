@@ -25,10 +25,10 @@ Permite interactuar con el modelo de lenguaje a través de endpoint REST, manten
 - (Opcional) Docker
 
 ## Estructura de las tablas
-![](/Users/rastukis/Downloads/reto_kavak.drawio.png)
+![](reto_kavak.drawio.png)
 
 ## Flujo 
-![](/Users/rastukis/Downloads/reto_kavak.drawio(1).png)
+![](reto_kavak.drawio(1).png)
 
 ## Instalación local
 1. Clonar el repositorio
