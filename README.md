@@ -5,14 +5,17 @@ Permite interactuar con el modelo de lenguaje a través de endpoint REST, manten
 
 ## Estructura del proyecto
 ```
-|---- database.py          # Conexión a la base de datos en Postgres
-|---- main.py              # Contiene el Endpoint que se utiliza para la interacción con el LLM
-|---- models.py            # Definición de los modelos que registran la conversación
-|---- requirements.txt     # Dependecnias del proyecto
-|---- schemas.py           # Esquemas que utiliza el Endpoint como datos de entrada
-|---- services.py          # Servicios que interactuan con la base para Obtener y guardar los datos en Postgres
-|---- docker-compose.yml   # Orquestación: API - DB - Ollama
-|---- Dockerfile           # Imagen del servicio
+|---- database.py              # Conexión a la base de datos en Postgres
+|---- main.py                  # Contiene el Endpoint que se utiliza para la interacción con el LLM
+|---- models.py                # Definición de los modelos que registran la conversación
+|---- requirements.txt         # Dependecnias del proyecto
+|---- schemas.py               # Esquemas que utiliza el Endpoint como datos de entrada
+|---- services.py              # Servicios que interactuan con la base para Obtener y guardar los datos en Postgres
+|---- docker-compose.yml       # Orquestación: API - DB - Ollama
+|---- Dockerfile               # Imagen del servicio
+|---- init.sql                 # Archivo SQL con las tablas necesarias que se cargaran al inicializar con Docker
+|---- ollama/
+|        |---- entrypoint.sh   # Código SH que inicializa el Servidor Ollama y descarga el modelo necesario para el API 
 ```
 
 ## Requisitos
@@ -20,6 +23,12 @@ Permite interactuar con el modelo de lenguaje a través de endpoint REST, manten
 - Ollama como un servidor local
 - PostgreSQL
 - (Opcional) Docker
+
+## Estructura de las tablas
+![](/Users/rastukis/Downloads/reto_kavak.drawio.png)
+
+## Flujo 
+![](/Users/rastukis/Downloads/reto_kavak.drawio(1).png)
 
 ## Instalación local
 1. Clonar el repositorio
