@@ -93,4 +93,15 @@ docker-compose up --build
     ]
 }
 ```
+## Variables de entorno
+
+| Variable          | Descripción                                      | Ejemplo                              |
+|-------------------|--------------------------------------------------|--------------------------------------|
+| POSTGRES_SERVER   | Se indica el host de la base Postgres            | localhost                            |
+| POSTGRES_PORT     | Puerto habilidato para la conexión a la base     | 1234                                 |
+| POSTGRES_DB       | Nombre de la base de datos                       | db_name                              |
+| POSTGRES_USER     | Usuario de la base de datos                      | user                                 |
+| POSTGRES_PASSWORD | Contraseña para conectarse a las base            | qwerty1&                             |
+| LLM_URL           | URL al API del Modelo, en este caso Ollama       | http://ejemplo-ollama:11434/api/chat |
+| LLM_MODEL         | Nombre del modelo que se usa para la interacción | llama3                               |
 
